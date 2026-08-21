@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Primitives et intégrales - Maths Terminale S</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>📘 Primitives et intégrales</h1>
+
+    <p>Mathématiques - Terminale S</p>
+
+    <nav>
+        <a href="index.html">🏠 Accueil</a>
+        <a href="cours.html">📚 Cours</a>
+        <a href="exercices.html">📝 Exercices</a>
+        <a href="quiz.html">🧠 Quiz</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="accueil">
+
+        <h2>1. Notion de primitive</h2>
+
+        <p>
+            Soit f une fonction définie sur un intervalle I.
+            Une fonction F est une primitive de f sur I si :
+        </p>
+
+        <p>
+            <strong>F'(x) = f(x)</strong>
+        </p>
+
+        <p>
+            Autrement dit, une primitive permet de retrouver une
+            fonction à partir de sa dérivée.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>2. Primitives usuelles</h2>
+
+        <div class="carte">
+
+            <ul>
+
+                <li>
+                    <strong>xⁿ → xⁿ⁺¹/(n + 1)</strong>
+                    pour n ≠ −1
+                </li>
+
+                <li>
+                    <strong>1/x → ln|x|</strong>
+                </li>
+
+                <li>
+                    <strong>eˣ → eˣ</strong>
+                </li>
+
+                <li>
+                    <strong>cos(x) → sin(x)</strong>
+                </li>
+
+                <li>
+                    <strong>sin(x) → −cos(x)</strong>
+                </li>
+
+            </ul>
+
+            <p>
+                À une constante près, toutes les primitives
+                d'une même fonction sont de la forme :
+            </p>
+
+            <p>
+                <strong>F(x) + C</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>3. Intégrale définie</h2>
+
+        <div class="carte">
+
+            <p>
+                Si F est une primitive de f sur [a ; b], alors :
+            </p>
+
+            <p>
+                <strong>
+                    ∫ₐᵇ f(x) dx = F(b) − F(a)
+                </strong>
+            </p>
+
+            <p>
+                Cette relation est appelée la formule fondamentale
+                du calcul intégral.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>4. Propriétés de l'intégrale</h2>
+
+        <div class="carte">
+
+            <h3>Linéarité</h3>
+
+            <p>
+                <strong>
+                    ∫ₐᵇ [λf(x) + μg(x)]dx
+                    =
+                    λ∫ₐᵇf(x)dx + μ∫ₐᵇg(x)dx
+                </strong>
+            </p>
+
+            <h3>Relation de Chasles</h3>
+
+            <p>
+                Pour a, b et c :
+            </p>
+
+            <p>
+                <strong>
+                    ∫ₐᶜ f(x)dx
+                    =
+                    ∫ₐᵇ f(x)dx + ∫ᵦᶜ f(x)dx
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>5. Calcul d'une intégrale</h2>
+
+        <div class="carte">
+
+            <h3>Exemple</h3>
+
+            <p>
+                Calculons :
+            </p>
+
+            <p>
+                <strong>
+                    ∫₀² 3x² dx
+                </strong>
+            </p>
+
+            <p>
+                Une primitive de 3x² est :
+            </p>
+
+            <p>
+                <strong>F(x) = x³</strong>
+            </p>
+
+            <p>
+                Donc :
+            </p>
+
+            <p>
+                <strong>
+                    ∫₀² 3x²dx
+                    = F(2) − F(0)
+                </strong>
+            </p>
+
+            <p>
+                <strong>
+                    = 2³ − 0³
+                </strong>
+            </p>
+
+            <p>
+                <strong>= 8</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>6. Intégrale et aire</h2>
+
+        <div class="carte">
+
+            <p>
+                Lorsque f est positive sur [a ; b], l'intégrale :
+            </p>
+
+            <p>
+                <strong>
+                    ∫ₐᵇ f(x)dx
+                </strong>
+            </p>
+
+            <p>
+                représente l'aire située entre la courbe de f,
+                l'axe des abscisses et les droites x = a et x = b.
+            </p>
+
+            <p>
+                L'unité d'aire dépend des unités utilisées sur
+                les axes du graphique.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>💡 Exemple plus avancé</h2>
+
+        <div class="carte">
+
+            <h3>Calculer une intégrale</h3>
+
+            <p>
+                Calculons :
+            </p>
+
+            <p>
+                <strong>
+                    I = ∫₁³ (2x + 1)dx
+                </strong>
+            </p>
+
+            <p>
+                Une primitive de 2x + 1 est :
+            </p>
+
+            <p>
+                <strong>
+                    F(x) = x² + x
+                </strong>
+            </p>
+
+            <p>
+                Donc :
+            </p>
+
+            <p>
+                <strong>
+                    I = F(3) − F(1)
+                </strong>
+            </p>
+
+            <p>
+                <strong>
+                    I = (9 + 3) − (1 + 1)
+                </strong>
+            </p>
+
+            <p>
+                <strong>I = 10</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>📝 Exercice</h2>
+
+        <div class="carte">
+
+            <h3>Exercice 1</h3>
+
+            <p>
+                Calculer :
+            </p>
+
+            <p>
+                <strong>
+                    I = ∫₀¹ (4x³ + 2x)dx
+                </strong>
+            </p>
+
+            <p>
+                1. Déterminer une primitive de la fonction.
+            </p>
+
+            <p>
+                2. Calculer I.
+            </p>
+
+            <button onclick="correctionIntegrale()">
+                Voir la correction
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Maths Terminale S</p>
+
+    <p>Apprendre les maths autrement 🚀</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+<div class="carte">
+
+    <h2>🧠 Teste tes connaissances</h2>
+
+    <p>
+        Tu as terminé le chapitre ?
+        Fais maintenant le quiz.
+    </p>
+
+    <a href="quiz-integrales.html">
+        <button>🧠 Commencer le quiz</button>
+    </a>
+
+</div>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maths Terminale S</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <h1>📐 Maths Terminale S</h1>
+        <p class="auteur">
+        👨‍💻 Site créé par <strong>KPIENAME lignipak</strong>
+        </p>
+        <p>
+            Apprends, révise et entraîne-toi en mathématiques
+        </p>
+        
+            <div class="menu-container">
+
+    <button class="menu-bouton"
+        onclick="document.getElementById('menu').classList.toggle('menu-ouvert')">
+    ☰
+    </button>
+    <nav id="menu">
+
+    <a href="index.html">🏠 Accueil</a>
+
+    <a href="cours.html">📚 Cours</a>
+
+    <a href="exercices.html">📝 Exercices</a>
+
+    <a href="quiz.html">🧠 Quiz</a>
+
+    <a href="apropos.html">ℹ️ À propos</a>
+
+    </nav>
+
+            </div>
+        </>
+    </header>
+
+
+    <!-- Accueil -->
+    <main>
+
+        <section id="accueil" class="accueil">
+
+            <h2>Bienvenue 👋</h2>
+
+            <p>
+                Bienvenue sur ton espace de révision des
+                mathématiques de Terminale S.
+            </p>
+
+            <p>
+                Retrouve ici tes cours, des exercices corrigés
+                et des quiz pour améliorer ton niveau.
+            </p>
+
+            <button onclick="afficherMessage()">
+                🚀 Commencer
+            </button>
+
+        </section>
+
+
+        <!-- Cours -->
+        <section id="cours">
+
+            <h2>📚 Les cours</h2>
+
+            <div class="chapitres">
+
+                <div class="carte">
+                    <h3>📘 Suites numériques</h3>
+                    <p>
+                        Suites arithmétiques, géométriques,
+                        convergence et limites.
+                    </p>
+                    <a href="suites.html">
+    <button>Voir le cours</button>
+                    </a></>
+                </div>
+
+                <div class="carte">
+                    <h3>📘 Limites</h3>
+                    <p>
+                        Calcul des limites et étude du comportement
+                        des fonctions.
+                    </p>
+                    <button>Voir le cours</button>
+                </div>
+
+                <div class="carte">
+                    <h3>📘 Dérivation</h3>
+                    <p>
+                        Dérivées, fonctions dérivables et étude
+                        des variations.
+                    </p>
+                    <button>Voir le cours</button>
+                </div>
+
+                <div class="carte">
+                    <h3>📘 Primitives et intégrales</h3>
+                    <p>
+                        Primitives, intégrales et calcul d'aires.
+                    </p>
+                    <button>Voir le cours</button>
+                </div>
+
+                <div class="carte">
+                    <h3>📘 Nombres complexes</h3>
+                    <p>
+                        Forme algébrique, trigonométrique
+                        et applications.
+                    </p>
+                    <button>Voir le cours</button>
+                </div>
+
+                <div class="carte">
+                    <h3>📘 Probabilités</h3>
+                    <p>
+                        Probabilités, variables aléatoires
+                        et lois.
+                    </p>
+                    <button>Voir le cours</button>
+                </div>
+
+                <div class="carte">
+                    <h3>📘 Géométrie dans l'espace</h3>
+                    <p>
+                        Vecteurs, droites, plans et produits scalaires.
+                    </p>
+                    <button>Voir le cours</button>
+                </div>
+
+                <div class="carte">
+                    <h3>📘 Fonctions exponentielles</h3>
+                    <p>
+                        Étude et propriétés de la fonction exponentielle.
+                    </p>
+                    <button>Voir le cours</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Exercices -->
+        <section id="exercices">
+
+            <h2>📝 Exercices</h2>
+
+            <p>
+                Entraîne-toi avec des exercices classés
+                par chapitre et par difficulté.
+            </p>
+
+            <button>Voir les exercices</button>
+
+        </section>
+
+
+        <!-- Quiz -->
+        <section id="quiz">
+
+            <h2>🧠 Quiz</h2>
+
+            <p>
+                Teste tes connaissances avec des questions
+                interactives.
+            </p>
+
+            <button onclick="lancerQuiz()">
+                Commencer un quiz
+            </button>
+
+        </section>
+<section class="a-propos">
+
+    <h2>👨‍💻 À propos du créateur</h2>
+
+    <h3>KPIENAME lignipak</h3>
+
+    <p>
+        Bienvenue sur Maths Terminale S !
+    </p>
+
+    <p>
+        Ce site a été créé pour aider les élèves de Terminale S
+        à mieux comprendre les mathématiques, réviser leurs cours
+        et s'entraîner grâce aux exercices et aux quiz.
+    </p>
+
+    <p>
+        📚 Cours • 📝 Exercices • 🧠 Quiz
+    </p>
+
+</section>
+      
+    </main>
+
+
+    <!-- Pied de page -->
+    <footer>
+
+    <p>© 2026 Maths Terminale S</p>
+
+    <p>
+        Site créé par <strong>KPIENAME lignipak</strong>
+    </p>
+
+    <p>
+        Apprendre les maths autrement 🚀
+    </p>
+
+    </footer>
+
+        <p>
+            © 2026 Maths Terminale S
+        </p>
+
+        <p>
+            Apprendre les maths autrement 🚀
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

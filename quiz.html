@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz - Maths Terminale S</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🧠 Quiz Maths Terminale S</h1>
+
+    <p>Teste réellement ton niveau</p>
+
+    <div class="menu-container">
+
+    <button class="menu-bouton"
+            onclick="document.getElementById('menu').classList.toggle('menu-ouvert')">
+        ☰
+    </button>
+
+    <nav id="menu">
+
+        <a href="index.html">🏠 Accueil</a>
+
+        <a href="cours.html">📚 Cours</a>
+
+        <a href="exercices.html">📝 Exercices</a>
+
+        <a href="quiz.html">🧠 Quiz</a>
+
+        <a href="apropos.html">ℹ️ À propos</a>
+
+    </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="quiz-container">
+
+        <h2>Quiz avancé</h2>
+<div class="choix-quiz">
+
+    <h3>📚 Choisis un quiz par chapitre</h3>
+
+    <a href="quiz-complexes.html">
+        🔢 Nombres complexes
+    </a>
+
+    <a href="quiz-integrales.html">
+        ∫ Intégrales
+    </a>
+
+    <a href="quiz-probabilites.html">
+        🎲 Probabilités
+    </a>
+
+    <a href="quiz-geometrie.html">
+        📐 Géométrie dans l'espace
+    </a>
+    <a href="quiz-derivation.html">
+    📈 Dérivation
+    </a>
+
+</div>
+        <p id="progression">
+            Question 1 / 5
+        </p>
+
+        <div class="barre">
+            <div id="progressionBarre"></div>
+        </div>
+
+        <div id="question">
+
+            <h3 id="questionTexte">
+                Chargement...
+            </h3>
+
+            <div id="reponses"></div>
+
+        </div>
+
+
+        <button id="boutonSuivant"
+                onclick="questionSuivante()"
+                style="display:none;">
+
+            Question suivante ➜
+
+        </button>
+
+
+        <div id="resultat" style="display:none;">
+
+            <h2>🎉 Quiz terminé !</h2>
+
+            <p id="score"></p>
+
+            <p id="messageScore"></p>
+
+            <button onclick="recommencerQuiz()">
+                🔄 Recommencer
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Maths Terminale S</p>
+
+    <p>Apprendre les maths autrement 🚀</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercices - Maths Terminale S</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>📝 Exercices de Mathématiques</h1>
+
+    <p>Entraîne-toi et améliore ton niveau</p>
+
+    <div class="menu-container">
+
+    <button class="menu-bouton"
+            onclick="document.getElementById('menu').classList.toggle('menu-ouvert')">
+        ☰
+    </button>
+
+    <nav id="menu">
+
+        <a href="index.html">🏠 Accueil</a>
+
+        <a href="cours.html">📚 Cours</a>
+
+        <a href="exercices.html">📝 Exercices</a>
+
+        <a href="quiz.html">🧠 Quiz</a>
+
+        <a href="apropos.html">ℹ️ À propos</a>
+
+    </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="accueil">
+
+        <h2>🎯 Entraînement</h2>
+
+        <p>
+            Choisis un chapitre et entraîne-toi avec des exercices
+            adaptés au niveau Terminale S.
+        </p>
+
+    </section>
+
+
+    <!-- SUITES -->
+
+    <section>
+
+        <h2>📘 Suites numériques</h2>
+
+        <div class="carte">
+
+            <h3>Exercice 1 — Niveau facile</h3>
+
+            <p>
+                Soit la suite (uₙ) définie par :
+            </p>
+
+            <p>
+                <strong>u₀ = 4</strong>
+            </p>
+
+            <p>
+                <strong>uₙ₊₁ = uₙ + 3</strong>
+            </p>
+
+            <p>
+                1. Déterminer la raison de la suite.
+            </p>
+
+            <p>
+                2. Calculer u₅.
+            </p>
+
+            <button onclick="correctionExercice1()">
+                Voir la correction
+            </button>
+
+        </div>
+
+
+        <div class="carte">
+
+            <h3>Exercice 2 — Niveau moyen</h3>
+
+            <p>
+                Une suite arithmétique possède pour premier terme
+                u₀ = 7 et pour raison r = 5.
+            </p>
+
+            <p>
+                Déterminer l'expression de uₙ puis calculer u₁₀.
+            </p>
+
+            <button onclick="correctionExercice2()">
+                Voir la correction
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- LIMITES -->
+
+    <section>
+
+        <h2>📘 Limites</h2>
+
+        <div class="carte">
+
+            <h3>Exercice 3 — Niveau facile</h3>
+
+            <p>
+                Calculer :
+            </p>
+
+            <p>
+                <strong>
+                    lim (5x + 2) lorsque x → +∞
+                </strong>
+            </p>
+
+            <button onclick="correctionExercice3()">
+                Voir la correction
+            </button>
+
+        </div>
+
+
+        <div class="carte">
+
+            <h3>Exercice 4 — Niveau moyen</h3>
+
+            <p>
+                Calculer :
+            </p>
+
+            <p>
+                <strong>
+                    lim (1/x) lorsque x → +∞
+                </strong>
+            </p>
+
+            <button onclick="correctionExercice4()">
+                Voir la correction
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- DÉRIVATION -->
+
+    <section>
+
+        <h2>📘 Dérivation</h2>
+
+        <div class="carte">
+
+            <h3>Exercice 5 — Niveau facile</h3>
+
+            <p>
+                Soit :
+            </p>
+
+            <p>
+                <strong>f(x) = x² + 3x + 2</strong>
+            </p>
+
+            <p>
+                Calculer f'(x).
+            </p>
+
+            <button onclick="correctionExercice5()">
+                Voir la correction
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTÉGRALES -->
+
+    <section>
+
+        <h2>📘 Primitives et intégrales</h2>
+
+        <div class="carte">
+
+            <h3>Exercice 6 — Niveau facile</h3>
+
+            <p>
+                Déterminer une primitive de :
+            </p>
+
+            <p>
+                <strong>f(x) = 3x²</strong>
+            </p>
+
+            <button onclick="correctionExercice6()">
+                Voir la correction
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Maths Terminale S</p>
+
+    <p>Apprendre les maths autrement 🚀</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

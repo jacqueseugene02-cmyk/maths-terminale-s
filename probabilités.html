@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Probabilités - Maths Terminale S</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🎲 Probabilités</h1>
+
+    <p>Mathématiques - Terminale S</p>
+
+    <nav>
+        <a href="index.html">🏠 Accueil</a>
+        <a href="cours.html">📚 Cours</a>
+        <a href="exercices.html">📝 Exercices</a>
+        <a href="quiz.html">🧠 Quiz</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="accueil">
+
+    <h2>1. Vocabulaire</h2>
+
+    <p>
+        Une expérience aléatoire est une expérience dont
+        on ne peut pas prévoir avec certitude le résultat.
+    </p>
+
+    <p>
+        L'ensemble de tous les résultats possibles est appelé
+        <strong>univers</strong>, noté généralement Ω.
+    </p>
+
+    <p>
+        Un <strong>événement</strong> est un ensemble de résultats
+        de l'expérience.
+    </p>
+
+</section>
+
+
+<section>
+
+    <h2>2. Probabilité d'un événement</h2>
+
+    <div class="carte">
+
+        <p>
+            La probabilité d'un événement A est notée :
+        </p>
+
+        <h3>P(A)</h3>
+
+        <p>
+            On a toujours :
+        </p>
+
+        <h3>0 ≤ P(A) ≤ 1</h3>
+
+        <p>
+            Pour l'événement certain :
+        </p>
+
+        <h3>P(Ω) = 1</h3>
+
+        <p>
+            Pour l'événement impossible :
+        </p>
+
+        <h3>P(∅) = 0</h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>3. Événement contraire</h2>
+
+    <div class="carte">
+
+        <p>
+            L'événement contraire de A est noté
+            <strong>Ā</strong>.
+        </p>
+
+        <p>
+            Sa probabilité est :
+        </p>
+
+        <h3>P(Ā) = 1 - P(A)</h3>
+
+        <p>
+            Donc :
+        </p>
+
+        <h3>P(A) + P(Ā) = 1</h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>4. Union et intersection</h2>
+
+    <div class="carte">
+
+        <p>
+            L'événement <strong>A ∩ B</strong> signifie :
+            A et B se réalisent simultanément.
+        </p>
+
+        <p>
+            L'événement <strong>A ∪ B</strong> signifie :
+            A ou B se réalise.
+        </p>
+
+        <p>
+            Formule générale :
+        </p>
+
+        <h3>
+            P(A ∪ B) =
+            P(A) + P(B) - P(A ∩ B)
+        </h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>5. Probabilité conditionnelle</h2>
+
+    <div class="carte">
+
+        <p>
+            La probabilité de A sachant B est notée :
+        </p>
+
+        <h3>P<sub>B</sub>(A)</h3>
+
+        <p>
+            ou :
+        </p>
+
+        <h3>P(A | B)</h3>
+
+        <p>
+            Si P(B) ≠ 0 :
+        </p>
+
+        <h3>
+            P(A | B) =
+            P(A ∩ B) / P(B)
+        </h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>6. Formule du produit</h2>
+
+    <div class="carte">
+
+        <p>
+            À partir de la probabilité conditionnelle :
+        </p>
+
+        <h3>
+            P(A ∩ B) = P(B) × P(A | B)
+        </h3>
+
+        <p>
+            On peut également écrire :
+        </p>
+
+        <h3>
+            P(A ∩ B) = P(A) × P(B | A)
+        </h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>7. Indépendance</h2>
+
+    <div class="carte">
+
+        <p>
+            Deux événements A et B sont indépendants si :
+        </p>
+
+        <h3>
+            P(A ∩ B) = P(A) × P(B)
+        </h3>
+
+        <p>
+            Lorsque P(B) ≠ 0, cela revient à :
+        </p>
+
+        <h3>
+            P(A | B) = P(A)
+        </h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>8. Formule des probabilités totales</h2>
+
+    <div class="carte">
+
+        <p>
+            Supposons que B et son contraire forment
+            une partition de l'univers.
+        </p>
+
+        <p>
+            Alors :
+        </p>
+
+        <h3>
+            P(A) =
+            P(B)P(A | B)
+            +
+            P( B̄ )P(A | B̄)
+        </h3>
+
+        <p>
+            Cette formule est très utile avec les
+            arbres de probabilités.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>9. Arbre de probabilités</h2>
+
+    <div class="carte">
+
+        <p>
+            Dans un arbre pondéré, les probabilités sont
+            placées sur les branches.
+        </p>
+
+        <p>
+            Pour calculer la probabilité d'un chemin,
+            on <strong>multiplie</strong> les probabilités
+            rencontrées sur ce chemin.
+        </p>
+
+        <p>
+            Pour calculer la probabilité de plusieurs chemins,
+            on <strong>additionne</strong> leurs probabilités.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>10. Loi binomiale</h2>
+
+    <div class="carte">
+
+        <p>
+            Une variable aléatoire X suit une loi binomiale
+            de paramètres n et p lorsque :
+        </p>
+
+        <h3>
+            X ~ B(n ; p)
+        </h3>
+
+        <p>
+            où :
+        </p>
+
+        <ul>
+
+            <li>n est le nombre de répétitions ;</li>
+
+            <li>p est la probabilité du succès ;</li>
+
+            <li>les répétitions sont indépendantes.</li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>11. Probabilité d'obtenir k succès</h2>
+
+    <div class="carte">
+
+        <p>
+            Si X suit une loi binomiale B(n ; p), alors :
+        </p>
+
+        <h3>
+            P(X = k) =
+            C(n,k) p<sup>k</sup>
+            (1-p)<sup>n-k</sup>
+        </h3>
+
+        <p>
+            où C(n,k) représente le nombre de combinaisons
+            de k éléments parmi n.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>12. Espérance d'une loi binomiale</h2>
+
+    <div class="carte">
+
+        <p>
+            Si :
+        </p>
+
+        <h3>
+            X ~ B(n ; p)
+        </h3>
+
+        <p>
+            alors son espérance est :
+        </p>
+
+        <h3>
+            E(X) = np
+        </h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>💡 Exemple corrigé</h2>
+
+    <div class="carte">
+
+        <h3>Situation</h3>
+
+        <p>
+            Un joueur réussit un tir avec une probabilité
+            de 0,7.
+        </p>
+
+        <p>
+            Il effectue 5 tirs indépendants.
+        </p>
+
+        <p>
+            Soit X le nombre de tirs réussis.
+        </p>
+
+        <p>
+            Alors :
+        </p>
+
+        <h3>
+            X ~ B(5 ; 0,7)
+        </h3>
+
+        <p>
+            Calculons P(X = 3).
+        </p>
+
+        <p>
+            P(X = 3)
+            = C(5,3) × 0,7³ × 0,3²
+        </p>
+
+        <p>
+            C(5,3) = 10
+        </p>
+
+        <p>
+            Donc :
+        </p>
+
+        <p>
+            P(X = 3)
+            = 10 × 0,343 × 0,09
+        </p>
+
+        <p>
+            <strong>
+                P(X = 3) = 0,3087
+            </strong>
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>🔥 Exercice 1</h2>
+
+    <div class="carte">
+
+        <p>
+            Une urne contient 4 boules rouges et 6 boules
+            bleues.
+        </p>
+
+        <p>
+            On tire une boule au hasard.
+        </p>
+
+        <p>
+            1. Calculer la probabilité d'obtenir une boule rouge.
+        </p>
+
+        <p>
+            2. Calculer la probabilité d'obtenir une boule bleue.
+        </p>
+
+        <button onclick="correctionProbabilites1()">
+            Voir la correction
+        </button>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>🚀 Exercice 2 — Loi binomiale</h2>
+
+    <div class="carte">
+
+        <p>
+            Une machine produit une pièce défectueuse avec
+            une probabilité de 0,02.
+        </p>
+
+        <p>
+            On choisit 10 pièces indépendamment.
+        </p>
+
+        <p>
+            Soit X le nombre de pièces défectueuses.
+        </p>
+
+        <p>
+            1. Donner la loi de X.
+        </p>
+
+        <p>
+            2. Calculer P(X = 1).
+        </p>
+
+        <p>
+            3. Calculer E(X).
+        </p>
+
+        <button onclick="correctionProbabilites2()">
+            Voir la correction
+        </button>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Maths Terminale S</p>
+
+    <p>Apprendre les maths autrement 🚀</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+<div class="carte">
+
+    <h2>🧠 Teste tes connaissances</h2>
+
+    <p>
+        Tu as terminé le chapitre ?
+        Passe maintenant au quiz.
+    </p>
+
+    <a href="quiz-probabilites.html">
+        <button>🧠 Commencer le quiz</button>
+    </a>
+
+</div>

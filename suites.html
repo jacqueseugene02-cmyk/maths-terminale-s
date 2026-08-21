@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Suites numériques - Maths Terminale S</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>📘 Suites numériques</h1>
+
+        <p>Mathématiques - Terminale S</p>
+
+        <nav>
+            <a href="index.html">🏠 Accueil</a>
+            <a href="#cours">📚 Cours</a>
+            <a href="#exemple">💡 Exemple</a>
+            <a href="#exercices">📝 Exercices</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- COURS -->
+
+        <section id="cours" class="accueil">
+
+            <h2>1. Définition d'une suite numérique</h2>
+
+            <p>
+                Une suite numérique est une fonction qui associe
+                à chaque entier naturel n un nombre réel noté
+                généralement <strong>uₙ</strong>.
+            </p>
+
+            <p>
+                On peut noter une suite :
+            </p>
+
+            <h3>(uₙ)</h3>
+
+            <p>
+                où <strong>n</strong> est appelé l'indice de la suite.
+            </p>
+
+        </section>
+
+
+        <!-- SUITE ARITHMÉTIQUE -->
+
+        <section>
+
+            <h2>2. Suite arithmétique</h2>
+
+            <p>
+                Une suite est dite arithmétique lorsqu'on passe
+                d'un terme au suivant en ajoutant toujours
+                le même nombre.
+            </p>
+
+            <h3>Formule de récurrence</h3>
+
+            <p>
+                <strong>uₙ₊₁ = uₙ + r</strong>
+            </p>
+
+            <p>
+                Le nombre <strong>r</strong> est appelé
+                la raison de la suite.
+            </p>
+
+            <h3>Terme général</h3>
+
+            <p>
+                <strong>uₙ = u₀ + nr</strong>
+            </p>
+
+        </section>
+
+
+        <!-- SUITE GÉOMÉTRIQUE -->
+
+        <section>
+
+            <h2>3. Suite géométrique</h2>
+
+            <p>
+                Une suite est dite géométrique lorsqu'on passe
+                d'un terme au suivant en multipliant toujours
+                par le même nombre.
+            </p>
+
+            <h3>Formule de récurrence</h3>
+
+            <p>
+                <strong>uₙ₊₁ = q × uₙ</strong>
+            </p>
+
+            <p>
+                Le nombre <strong>q</strong> est appelé
+                la raison de la suite.
+            </p>
+
+            <h3>Terme général</h3>
+
+            <p>
+                <strong>uₙ = u₀ × qⁿ</strong>
+            </p>
+
+        </section>
+
+
+        <!-- EXEMPLE -->
+
+        <section id="exemple">
+
+            <h2>💡 Exemple</h2>
+
+            <div class="carte">
+
+                <h3>Suite arithmétique</h3>
+
+                <p>
+                    Soit la suite définie par :
+                </p>
+
+                <p>
+                    <strong>u₀ = 3</strong>
+                </p>
+
+                <p>
+                    et
+                </p>
+
+                <p>
+                    <strong>uₙ₊₁ = uₙ + 2</strong>
+                </p>
+
+                <p>
+                    La raison est donc :
+                    <strong>r = 2</strong>.
+                </p>
+
+                <p>
+                    Le terme général est :
+                </p>
+
+                <p>
+                    <strong>uₙ = 3 + 2n</strong>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXERCICES -->
+
+        <section id="exercices">
+
+            <h2>📝 Exercices</h2>
+
+            <div class="carte">
+
+                <h3>Exercice 1</h3>
+
+                <p>
+                    Soit la suite (uₙ) définie par :
+                </p>
+
+                <p>
+                    <strong>u₀ = 5</strong>
+                </p>
+
+                <p>
+                    <strong>uₙ₊₁ = uₙ + 3</strong>
+                </p>
+
+                <p>
+                    1. Déterminer sa raison.
+                </p>
+
+                <p>
+                    2. Déterminer l'expression de uₙ.
+                </p>
+
+                <button onclick="alert('Correction : r = 3 et uₙ = 5 + 3n')">
+                    Voir la correction
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 Maths Terminale S</p>
+
+        <p>Apprendre les maths autrement 🚀</p>
+
+    </footer>
+
+</body>
+
+</html>

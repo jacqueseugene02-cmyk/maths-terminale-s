@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Géométrie dans l'espace - Terminale S</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>📐 Géométrie dans l'espace</h1>
+
+    <p>Mathématiques - Terminale S</p>
+
+    <nav>
+        <a href="index.html">🏠 Accueil</a>
+        <a href="cours.html">📚 Cours</a>
+        <a href="exercices.html">📝 Exercices</a>
+        <a href="quiz.html">🧠 Quiz</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="accueil">
+
+    <h2>1. Repérage dans l'espace</h2>
+
+    <p>
+        Dans l'espace, on utilise un repère
+        <strong>(O ; i ; j ; k)</strong>.
+    </p>
+
+    <p>
+        Un point M possède trois coordonnées :
+    </p>
+
+    <h3>M(x ; y ; z)</h3>
+
+    <p>
+        x, y et z sont les coordonnées du point M.
+    </p>
+
+</section>
+
+
+<section>
+
+    <h2>2. Coordonnées d'un vecteur</h2>
+
+    <div class="carte">
+
+        <p>
+            Soient deux points :
+        </p>
+
+        <p>
+            A(x<sub>A</sub> ; y<sub>A</sub> ; z<sub>A</sub>)
+        </p>
+
+        <p>
+            B(x<sub>B</sub> ; y<sub>B</sub> ; z<sub>B</sub>)
+        </p>
+
+        <p>
+            Alors :
+        </p>
+
+        <h3>
+            AB⃗ =
+            (x<sub>B</sub>-x<sub>A</sub> ;
+            y<sub>B</sub>-y<sub>A</sub> ;
+            z<sub>B</sub>-z<sub>A</sub>)
+        </h3>
+
+        <h3>Exemple</h3>
+
+        <p>
+            A(1 ; 2 ; 3)
+        </p>
+
+        <p>
+            B(4 ; 6 ; 5)
+        </p>
+
+        <p>
+            AB⃗ = (3 ; 4 ; 2)
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>3. Norme d'un vecteur</h2>
+
+    <div class="carte">
+
+        <p>
+            Si :
+        </p>
+
+        <h3>
+            u⃗ = (x ; y ; z)
+        </h3>
+
+        <p>
+            alors :
+        </p>
+
+        <h3>
+            ||u⃗|| = √(x² + y² + z²)
+        </h3>
+
+        <h3>Exemple</h3>
+
+        <p>
+            u⃗ = (2 ; 3 ; 6)
+        </p>
+
+        <p>
+            ||u⃗|| = √(4 + 9 + 36)
+        </p>
+
+        <p>
+            <strong>||u⃗|| = 7</strong>
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>4. Distance entre deux points</h2>
+
+    <div class="carte">
+
+        <p>
+            La distance AB est la norme du vecteur AB⃗ :
+        </p>
+
+        <h3>
+            AB = ||AB⃗||
+        </h3>
+
+        <p>
+            Donc :
+        </p>
+
+        <h3>
+            AB =
+            √[(x<sub>B</sub>-x<sub>A</sub>)²
+            +(y<sub>B</sub>-y<sub>A</sub>)²
+            +(z<sub>B</sub>-z<sub>A</sub>)²]
+        </h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>5. Produit scalaire</h2>
+
+    <div class="carte">
+
+        <p>
+            Soient :
+        </p>
+
+        <p>
+            u⃗ = (x ; y ; z)
+        </p>
+
+        <p>
+            v⃗ = (x' ; y' ; z')
+        </p>
+
+        <p>
+            Leur produit scalaire est :
+        </p>
+
+        <h3>
+            u⃗ · v⃗ =
+            xx' + yy' + zz'
+        </h3>
+
+        <p>
+            Deux vecteurs non nuls sont orthogonaux si :
+        </p>
+
+        <h3>
+            u⃗ · v⃗ = 0
+        </h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>6. Équation paramétrique d'une droite</h2>
+
+    <div class="carte">
+
+        <p>
+            Une droite passant par A et de vecteur directeur
+            u⃗ peut être représentée par :
+        </p>
+
+        <h3>
+            M = A + t u⃗
+        </h3>
+
+        <p>
+            où t est un nombre réel.
+        </p>
+
+        <p>
+            Si :
+        </p>
+
+        <p>
+            A(x<sub>A</sub> ; y<sub>A</sub> ; z<sub>A</sub>)
+        </p>
+
+        <p>
+            et :
+        </p>
+
+        <p>
+            u⃗ = (a ; b ; c)
+        </p>
+
+        <p>
+            alors :
+        </p>
+
+        <h3>
+            x = x<sub>A</sub> + at
+        </h3>
+
+        <h3>
+            y = y<sub>A</sub> + bt
+        </h3>
+
+        <h3>
+            z = z<sub>A</sub> + ct
+        </h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>7. Équation cartésienne d'un plan</h2>
+
+    <div class="carte">
+
+        <p>
+            Un plan peut avoir une équation de la forme :
+        </p>
+
+        <h3>
+            ax + by + cz + d = 0
+        </h3>
+
+        <p>
+            Le vecteur :
+        </p>
+
+        <h3>
+            n⃗ = (a ; b ; c)
+        </h3>
+
+        <p>
+            est un vecteur normal au plan.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>8. Droite et plan</h2>
+
+    <div class="carte">
+
+        <p>
+            Pour étudier la position d'une droite par rapport
+            à un plan, on peut utiliser un vecteur directeur
+            de la droite et un vecteur normal au plan.
+        </p>
+
+        <p>
+            Si le vecteur directeur u⃗ est colinéaire au vecteur
+            normal n⃗, alors la droite est perpendiculaire au plan.
+        </p>
+
+        <h3>
+            u⃗ = λn⃗
+        </h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>9. Plans parallèles</h2>
+
+    <div class="carte">
+
+        <p>
+            Deux plans sont parallèles lorsque leurs vecteurs
+            normaux sont colinéaires.
+        </p>
+
+        <p>
+            Si :
+        </p>
+
+        <h3>
+            n⃗₁ = λn⃗₂
+        </h3>
+
+        <p>
+            alors les deux plans sont parallèles
+            ou confondus.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>10. Droites parallèles</h2>
+
+    <div class="carte">
+
+        <p>
+            Deux droites sont parallèles lorsque leurs vecteurs
+            directeurs sont colinéaires.
+        </p>
+
+        <h3>
+            u⃗ = λv⃗
+        </h3>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>11. Intersection d'une droite et d'un plan</h2>
+
+    <div class="carte">
+
+        <p>
+            Pour déterminer le point d'intersection d'une droite
+            et d'un plan, on remplace les coordonnées
+            paramétriques de la droite dans l'équation du plan.
+        </p>
+
+        <p>
+            On obtient alors une équation en t.
+        </p>
+
+        <p>
+            Après avoir trouvé t, on remplace cette valeur
+            dans les équations de la droite.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>12. Exemple corrigé</h2>
+
+    <div class="carte">
+
+        <p>
+            Soit la droite :
+        </p>
+
+        <p>
+            x = 1 + 2t
+        </p>
+
+        <p>
+            y = 3 - t
+        </p>
+
+        <p>
+            z = 2 + t
+        </p>
+
+        <p>
+            et le plan :
+        </p>
+
+        <p>
+            x + y + z - 7 = 0
+        </p>
+
+        <p>
+            On remplace :
+        </p>
+
+        <p>
+            (1+2t)+(3-t)+(2+t)-7 = 0
+        </p>
+
+        <p>
+            2t - t + t + 6 - 7 = 0
+        </p>
+
+        <p>
+            2t - 1 = 0
+        </p>
+
+        <p>
+            t = 1/2
+        </p>
+
+        <p>
+            Le point d'intersection est donc :
+        </p>
+
+        <p>
+            <strong>
+                M(2 ; 5/2 ; 5/2)
+            </strong>
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>🔥 Exercice 1</h2>
+
+    <div class="carte">
+
+        <p>
+            Soient :
+        </p>
+
+        <p>
+            A(1 ; 2 ; 3)
+        </p>
+
+        <p>
+            B(4 ; 6 ; 5)
+        </p>
+
+        <p>
+            1. Déterminer AB⃗.
+        </p>
+
+        <p>
+            2. Calculer AB.
+        </p>
+
+        <button onclick="correctionGeo1()">
+            Voir la correction
+        </button>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>🚀 Exercice 2 — Produit scalaire</h2>
+
+    <div class="carte">
+
+        <p>
+            Soient :
+        </p>
+
+        <p>
+            u⃗ = (2 ; -1 ; 3)
+        </p>
+
+        <p>
+            v⃗ = (1 ; 4 ; 0)
+        </p>
+
+        <p>
+            Calculer u⃗ · v⃗.
+        </p>
+
+        <button onclick="correctionGeo2()">
+            Voir la correction
+        </button>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Maths Terminale S</p>
+
+    <p>Apprendre les maths autrement 🚀</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+<div class="carte">
+
+    <h2>🧠 Teste tes connaissances</h2>
+
+    <p>
+        Tu as terminé le chapitre ?
+        Passe maintenant au quiz.
+    </p>
+
+    <a href="quiz-geometrie.html">
+        <button>🧠 Commencer le quiz</button>
+    </a>
+
+</div>

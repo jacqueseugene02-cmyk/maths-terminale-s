@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz - Probabilités</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🧠 Quiz — Probabilités</h1>
+
+    <p>Terminale S • Niveau avancé</p>
+
+    <a href="cours.html">📚 Retour aux cours</a>
+
+</header>
+
+
+<main>
+
+<section class="quiz-box">
+
+    <h2 id="titre">Question 1 / 10</h2>
+
+    <div id="quiz"></div>
+
+    <button id="suivant" onclick="suivante()">
+        Question suivante →
+    </button>
+
+    <div id="resultat"></div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Maths Terminale S</p>
+
+</footer>
+
+
+<script>
+
+const questions = [
+
+{
+    question: "Une urne contient 3 boules rouges et 7 boules bleues. Quelle est la probabilité de tirer une boule rouge ?",
+
+    reponses: [
+        "0,3",
+        "0,7",
+        "3",
+        "0,4"
+    ],
+
+    correcte: 0
+},
+
+{
+    question: "Si P(A) = 0,35, alors P(Ā) vaut :",
+
+    reponses: [
+        "0,35",
+        "0,55",
+        "0,65",
+        "1,35"
+    ],
+
+    correcte: 2
+},
+
+{
+    question: "Si A et B sont indépendants, P(A)=0,4 et P(B)=0,5. Alors P(A ∩ B) vaut :",
+
+    reponses: [
+        "0,1",
+        "0,2",
+        "0,4",
+        "0,9"
+    ],
+
+    correcte: 1
+},
+
+{
+    question: "Si P(B)=0,4 et P(A ∩ B)=0,12, alors P(A|B) vaut :",
+
+    reponses: [
+        "0,03",
+        "0,3",
+        "0,48",
+        "0,52"
+    ],
+
+    correcte: 1
+},
+
+{
+    question: "Si X suit une loi binomiale B(10 ; 0,3), alors E(X) vaut :",
+
+    reponses: [
+        "0,3",
+        "3",
+        "7",
+        "10"
+    ],
+
+    correcte: 1
+},
+
+{
+    question: "Si X suit B(5 ; 0,2), quelle est la formule de P(X=2) ?",
+
+    reponses: [
+        "C(5,2) × 0,2² × 0,8³",
+        "C(5,2) × 0,2⁵",
+        "0,2² × 0,8²",
+        "C(5,2) × 0,8⁵"
+    ],
+
+    correcte: 0
+},
+
+{
+    question: "Une variable aléatoire X suit B(20 ; 0,1). Son espérance est :",
+
+    reponses: [
+        "0,1",
+        "1",
+        "2",
+        "20"
+    ],
+
+    correcte: 2
+},
+
+{
+    question: "Si P(A)=0,6, P(B|A)=0,5 et P(Ā)=0,4, P(B|Ā)=0,2, alors P(B) vaut :",
+
+    reponses: [
+        "0,22",
+        "0,30",
+        "0,38",
+        "0,50"
+    ],
+
+    correcte: 2
+},
+
+{
+    question: "Pour une loi binomiale B(n ; p), le nombre de répétitions est représenté par :",
+
+    reponses: [
+        "p",
+        "1-p",
+        "n",
+        "k"
+    ],
+
+    correcte: 2
+},
+
+{
+    question: "Si P(A)=0,7 et P(B)=0,6 et P(A ∩ B)=0,42, alors A et B sont :",
+
+    reponses: [
+        "contraires",
+        "indépendants",
+        "impossibles",
+        "incompatibles"
+    ],
+
+    correcte: 1
+}
+
+];
+
+
+questions.sort(() => Math.random() - 0.5);
+
+let numero = 0;
+let score = 0;
+let repondu = false;
+
+
+function afficher() {
+
+    repondu = false;
+
+    const q = questions[numero];
+
+    document.getElementById("titre").textContent =
+        "Question " + (numero + 1) +
+        " / " + questions.length;
+
+    let contenu =
+        "<h3>" + q.question + "</h3>";
+
+    for (let i = 0; i < q.reponses.length; i++) {
+
+        contenu +=
+        '<button class="reponse" onclick="verifier(' +
+        i + ')">' +
+        q.reponses[i] +
+        '</button>';
+
+    }
+
+    document.getElementById("quiz").innerHTML =
+        contenu;
+
+    document.getElementById("resultat").innerHTML =
+        "";
+
+}
+
+
+function verifier(index) {
+
+    if (repondu) return;
+
+    repondu = true;
+
+    const q = questions[numero];
+
+    const boutons =
+        document.querySelectorAll(".reponse");
+
+    if (index === q.correcte) {
+
+        score++;
+
+        boutons[index].classList.add("bonne");
+
+        document.getElementById("resultat").innerHTML =
+            "✅ Bonne réponse !";
+
+    } else {
+
+        boutons[index].classList.add("mauvaise");
+
+        boutons[q.correcte].classList.add("bonne");
+
+        document.getElementById("resultat").innerHTML =
+            "❌ Mauvaise réponse.";
+
+    }
+
+}
+
+
+function suivante() {
+
+    if (!repondu) {
+
+        alert("Choisis une réponse avant de continuer.");
+
+        return;
+
+    }
+
+    numero++;
+
+    if (numero < questions.length) {
+
+        afficher();
+
+    } else {
+
+        finQuiz();
+
+    }
+
+}
+
+
+function finQuiz() {
+
+    document.getElementById("quiz").innerHTML =
+        "";
+
+    document.getElementById("titre").textContent =
+        "🎉 Quiz terminé";
+
+    document.getElementById("suivant").style.display =
+        "none";
+
+    let message;
+
+    if (score >= 9) {
+
+        message =
+            "🏆 Excellent ! Tu maîtrises très bien les probabilités.";
+
+    } else if (score >= 7) {
+
+        message =
+            "👏 Très bon niveau !";
+
+    } else if (score >= 5) {
+
+        message =
+            "👍 Niveau moyen. Continue à t'entraîner.";
+
+    } else {
+
+        message =
+            "📚 Reprends le cours et réessaie.";
+
+    }
+
+    document.getElementById("resultat").innerHTML =
+
+        "<h2>Score : " +
+        score + " / " +
+        questions.length +
+        "</h2>" +
+
+        "<p>" + message + "</p>" +
+
+        '<button onclick="location.reload()">' +
+        "🔄 Recommencer" +
+        "</button>";
+
+}
+
+
+afficher();
+
+</script>
+
+</body>
+
+</html>

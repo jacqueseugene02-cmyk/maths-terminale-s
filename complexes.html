@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nombres complexes - Maths Terminale S</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🔢 Nombres complexes</h1>
+
+    <p>Mathématiques - Terminale S</p>
+
+    <nav>
+        <a href="index.html">🏠 Accueil</a>
+        <a href="cours.html">📚 Cours</a>
+        <a href="exercices.html">📝 Exercices</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- 1 -->
+
+    <section class="accueil">
+
+        <h2>1. Introduction aux nombres complexes</h2>
+
+        <p>
+            Dans l'ensemble des nombres réels, l'équation
+        </p>
+
+        <p>
+            <strong>x² + 1 = 0</strong>
+        </p>
+
+        <p>
+            n'a pas de solution car x² est toujours positif ou nul.
+        </p>
+
+        <p>
+            On introduit donc un nouveau nombre noté
+            <strong>i</strong>, défini par :
+        </p>
+
+        <p>
+            <strong>i² = -1</strong>
+        </p>
+
+        <p>
+            L'ensemble des nombres complexes est noté
+            <strong>ℂ</strong>.
+        </p>
+
+    </section>
+
+
+    <!-- 2 -->
+
+    <section>
+
+        <h2>2. Forme algébrique</h2>
+
+        <div class="carte">
+
+            <p>
+                Tout nombre complexe z peut s'écrire de manière unique :
+            </p>
+
+            <p>
+                <strong>z = a + bi</strong>
+            </p>
+
+            <p>
+                où a et b sont des nombres réels.
+            </p>
+
+            <p>
+                <strong>a</strong> est la partie réelle de z.
+            </p>
+
+            <p>
+                <strong>b</strong> est la partie imaginaire de z.
+            </p>
+
+            <h3>Exemple</h3>
+
+            <p>
+                Soit :
+            </p>
+
+            <p>
+                <strong>z = 4 - 7i</strong>
+            </p>
+
+            <p>
+                Alors :
+            </p>
+
+            <p>
+                Re(z) = 4
+            </p>
+
+            <p>
+                Im(z) = -7
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 3 -->
+
+    <section>
+
+        <h2>3. Égalité de deux nombres complexes</h2>
+
+        <div class="carte">
+
+            <p>
+                Deux nombres complexes sont égaux si et seulement
+                si leurs parties réelles sont égales et leurs parties
+                imaginaires sont égales.
+            </p>
+
+            <p>
+                Si :
+            </p>
+
+            <p>
+                <strong>
+                    z = a + bi
+                </strong>
+            </p>
+
+            <p>
+                et :
+            </p>
+
+            <p>
+                <strong>
+                    z' = c + di
+                </strong>
+            </p>
+
+            <p>
+                alors :
+            </p>
+
+            <p>
+                <strong>
+                    z = z' ⇔ a = c et b = d
+                </strong>
+            </p>
+
+            <h3>Exemple</h3>
+
+            <p>
+                Résoudre :
+            </p>
+
+            <p>
+                <strong>
+                    (2x + 1) + (y - 3)i = 5 + 4i
+                </strong>
+            </p>
+
+            <p>
+                On identifie les parties réelles :
+            </p>
+
+            <p>
+                2x + 1 = 5
+            </p>
+
+            <p>
+                donc x = 2.
+            </p>
+
+            <p>
+                Puis les parties imaginaires :
+            </p>
+
+            <p>
+                y - 3 = 4
+            </p>
+
+            <p>
+                donc y = 7.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 4 -->
+
+    <section>
+
+        <h2>4. Addition et soustraction</h2>
+
+        <div class="carte">
+
+            <p>
+                Soient :
+            </p>
+
+            <p>
+                z₁ = a + bi
+            </p>
+
+            <p>
+                z₂ = c + di
+            </p>
+
+            <p>
+                Alors :
+            </p>
+
+            <p>
+                <strong>
+                    z₁ + z₂ = (a+c) + (b+d)i
+                </strong>
+            </p>
+
+            <p>
+                et :
+            </p>
+
+            <p>
+                <strong>
+                    z₁ - z₂ = (a-c) + (b-d)i
+                </strong>
+            </p>
+
+            <h3>Exemple</h3>
+
+            <p>
+                z₁ = 3 + 2i
+            </p>
+
+            <p>
+                z₂ = 1 - 5i
+            </p>
+
+            <p>
+                z₁ + z₂ = 4 - 3i
+            </p>
+
+            <p>
+                z₁ - z₂ = 2 + 7i
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 5 -->
+
+    <section>
+
+        <h2>5. Multiplication</h2>
+
+        <div class="carte">
+
+            <p>
+                Pour multiplier deux nombres complexes,
+                on développe comme avec des expressions algébriques.
+            </p>
+
+            <p>
+                <strong>
+                    (a+bi)(c+di)
+                </strong>
+            </p>
+
+            <p>
+                = ac + adi + bci + bdi²
+            </p>
+
+            <p>
+                Comme i² = -1 :
+            </p>
+
+            <p>
+                <strong>
+                    (a+bi)(c+di)
+                    = (ac-bd)+(ad+bc)i
+                </strong>
+            </p>
+
+            <h3>Exemple</h3>
+
+            <p>
+                Calculons :
+            </p>
+
+            <p>
+                <strong>
+                    (2+3i)(1-2i)
+                </strong>
+            </p>
+
+            <p>
+                = 2 - 4i + 3i - 6i²
+            </p>
+
+            <p>
+                = 2 - i + 6
+            </p>
+
+            <p>
+                <strong>= 8 - i</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 6 -->
+
+    <section>
+
+        <h2>6. Conjugué d'un nombre complexe</h2>
+
+        <div class="carte">
+
+            <p>
+                Si :
+            </p>
+
+            <p>
+                <strong>
+                    z = a + bi
+                </strong>
+            </p>
+
+            <p>
+                alors son conjugué est :
+            </p>
+
+            <p>
+                <strong>
+                    z̄ = a - bi
+                </strong>
+            </p>
+
+            <h3>Exemple</h3>
+
+            <p>
+                Si :
+            </p>
+
+            <p>
+                z = 5 + 3i
+            </p>
+
+            <p>
+                alors :
+            </p>
+
+            <p>
+                <strong>
+                    z̄ = 5 - 3i
+                </strong>
+            </p>
+
+            <h3>Propriété importante</h3>
+
+            <p>
+                <strong>
+                    z × z̄ = |z|²
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 7 -->
+
+    <section>
+
+        <h2>7. Module d'un nombre complexe</h2>
+
+        <div class="carte">
+
+            <p>
+                Pour :
+            </p>
+
+            <p>
+                <strong>
+                    z = a + bi
+                </strong>
+            </p>
+
+            <p>
+                son module est :
+            </p>
+
+            <p>
+                <strong>
+                    |z| = √(a²+b²)
+                </strong>
+            </p>
+
+            <h3>Exemple</h3>
+
+            <p>
+                Soit :
+            </p>
+
+            <p>
+                z = 3 + 4i
+            </p>
+
+            <p>
+                Alors :
+            </p>
+
+            <p>
+                |z| = √(3²+4²)
+            </p>
+
+            <p>
+                <strong>|z| = 5</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 8 -->
+
+    <section>
+
+        <h2>8. Inverse d'un nombre complexe</h2>
+
+        <div class="carte">
+
+            <p>
+                Pour z ≠ 0 :
+            </p>
+
+            <p>
+                <strong>
+                    1/z = z̄/|z|²
+                </strong>
+            </p>
+
+            <h3>Exemple</h3>
+
+            <p>
+                Calculons :
+            </p>
+
+            <p>
+                <strong>
+                    1/(2+3i)
+                </strong>
+            </p>
+
+            <p>
+                Le conjugué de 2+3i est 2-3i.
+            </p>
+
+            <p>
+                |2+3i|² = 2²+3² = 13.
+            </p>
+
+            <p>
+                Donc :
+            </p>
+
+            <p>
+                <strong>
+                    1/(2+3i) = (2-3i)/13
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 9 -->
+
+    <section>
+
+        <h2>9. Division de nombres complexes</h2>
+
+        <div class="carte">
+
+            <p>
+                Pour effectuer une division, on multiplie
+                le numérateur et le dénominateur par le conjugué
+                du dénominateur.
+            </p>
+
+            <h3>Exemple</h3>
+
+            <p>
+                Calculons :
+            </p>
+
+            <p>
+                <strong>
+                    (1+i)/(2-i)
+                </strong>
+            </p>
+
+            <p>
+                On multiplie par 2+i :
+            </p>
+
+            <p>
+                [(1+i)(2+i)] / [(2-i)(2+i)]
+            </p>
+
+            <p>
+                Numérateur :
+            </p>
+
+            <p>
+                2+i+2i+i² = 1+3i
+            </p>
+
+            <p>
+                Dénominateur :
+            </p>
+
+            <p>
+                4-i² = 5
+            </p>
+
+            <p>
+                Donc :
+            </p>
+
+            <p>
+                <strong>
+                    (1+i)/(2-i) = 1/5 + 3/5i
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 10 -->
+
+    <section>
+
+        <h2>10. Interprétation géométrique</h2>
+
+        <div class="carte">
+
+            <p>
+                À tout nombre complexe :
+            </p>
+
+            <p>
+                <strong>
+                    z = a+bi
+                </strong>
+            </p>
+
+            <p>
+                on peut associer un point M de coordonnées :
+            </p>
+
+            <p>
+                <strong>
+                    M(a ; b)
+                </strong>
+            </p>
+
+            <p>
+                dans un plan muni d'un repère orthonormé.
+            </p>
+
+            <p>
+                Le point M est appelé l'image de z.
+            </p>
+
+            <p>
+                Le vecteur OM a pour coordonnées :
+            </p>
+
+            <p>
+                <strong>
+                    (a ; b)
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 11 -->
+
+    <section>
+
+        <h2>11. Argument d'un nombre complexe</h2>
+
+        <div class="carte">
+
+            <p>
+                Pour un nombre complexe non nul z,
+                un argument de z est un angle θ tel que :
+            </p>
+
+            <p>
+                <strong>
+                    cos(θ) = a/|z|
+                </strong>
+            </p>
+
+            <p>
+                et :
+            </p>
+
+            <p>
+                <strong>
+                    sin(θ) = b/|z|
+                </strong>
+            </p>
+
+            <p>
+                On note généralement :
+            </p>
+
+            <p>
+                <strong>
+                    arg(z) = θ
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 12 -->
+
+    <section>
+
+        <h2>12. Forme trigonométrique</h2>
+
+        <div class="carte">
+
+            <p>
+                Si z est non nul, alors :
+            </p>
+
+            <p>
+                <strong>
+                    z = r(cos θ + i sin θ)
+                </strong>
+            </p>
+
+            <p>
+                où :
+            </p>
+
+            <ul>
+
+                <li>
+                    r = |z|
+                </li>
+
+                <li>
+                    θ est un argument de z
+                </li>
+
+            </ul>
+
+            <h3>Exemple</h3>
+
+            <p>
+                Pour :
+            </p>
+
+            <p>
+                z = 1+i
+            </p>
+
+            <p>
+                son module vaut :
+            </p>
+
+            <p>
+                r = √2
+            </p>
+
+            <p>
+                et un argument est :
+            </p>
+
+            <p>
+                θ = π/4
+            </p>
+
+            <p>
+                Donc :
+            </p>
+
+            <p>
+                <strong>
+                    z = √2(cos(π/4)+i sin(π/4))
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 13 -->
+
+    <section>
+
+        <h2>13. Forme exponentielle</h2>
+
+        <div class="carte">
+
+            <p>
+                Grâce à la formule d'Euler :
+            </p>
+
+            <p>
+                <strong>
+                    eⁱᶿ = cos θ + i sin θ
+                </strong>
+            </p>
+
+            <p>
+                la forme trigonométrique peut s'écrire :
+            </p>
+
+            <p>
+                <strong>
+                    z = reⁱᶿ
+                </strong>
+            </p>
+
+            <p>
+                Cette forme est particulièrement utile pour
+                effectuer des produits, quotients et puissances.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 14 -->
+
+    <section>
+
+        <h2>14. Produit et quotient sous forme exponentielle</h2>
+
+        <div class="carte">
+
+            <p>
+                Si :
+            </p>
+
+            <p>
+                z₁ = r₁eⁱᵅ
+            </p>
+
+            <p>
+                z₂ = r₂eⁱᵝ
+            </p>
+
+            <p>
+                alors :
+            </p>
+
+            <p>
+                <strong>
+                    z₁z₂ = r₁r₂eⁱ⁽ᵅ⁺ᵝ⁾
+                </strong>
+            </p>
+
+            <p>
+                et :
+            </p>
+
+            <p>
+                <strong>
+                    z₁/z₂ = (r₁/r₂)eⁱ⁽ᵅ⁻ᵝ⁾
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 15 -->
+
+    <section>
+
+        <h2>15. Formule de Moivre</h2>
+
+        <div class="carte">
+
+            <p>
+                Pour tout entier n :
+            </p>
+
+            <p>
+                <strong>
+                    (cos θ + i sin θ)ⁿ
+                    =
+                    cos(nθ)+i sin(nθ)
+                </strong>
+            </p>
+
+            <p>
+                Cette formule permet notamment de calculer
+                des puissances de nombres complexes.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 16 -->
+
+    <section>
+
+        <h2>16. Résolution d'équations complexes</h2>
+
+        <div class="carte">
+
+            <h3>Exemple 1</h3>
+
+            <p>
+                Résolvons :
+            </p>
+
+            <p>
+                <strong>
+                    z² + 4 = 0
+                </strong>
+            </p>
+
+            <p>
+                z² = -4
+            </p>
+
+            <p>
+                Comme i² = -1 :
+            </p>
+
+            <p>
+                <strong>
+                    z = 2i ou z = -2i
+                </strong>
+            </p>
+
+
+            <h3>Exemple 2</h3>
+
+            <p>
+                Résolvons :
+            </p>
+
+            <p>
+                <strong>
+                    z² - 2z + 5 = 0
+                </strong>
+            </p>
+
+            <p>
+                Δ = (-2)² - 4×1×5
+            </p>
+
+            <p>
+                Δ = -16
+            </p>
+
+            <p>
+                √Δ = 4i
+            </p>
+
+            <p>
+                Donc :
+            </p>
+
+            <p>
+                <strong>
+                    z₁ = 1+2i
+                </strong>
+            </p>
+
+            <p>
+                <strong>
+                    z₂ = 1-2i
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 17 -->
+
+    <section>
+
+        <h2>17. Nombres complexes et géométrie</h2>
+
+        <div class="carte">
+
+            <p>
+                Les nombres complexes permettent de traduire
+                de nombreux problèmes géométriques.
+            </p>
+
+            <p>
+                Pour deux points A et B d'affixes zA et zB,
+                l'affixe du vecteur AB est :
+            </p>
+
+            <p>
+                <strong>
+                    zB - zA
+                </strong>
+            </p>
+
+            <p>
+                La distance AB est :
+            </p>
+
+            <p>
+                <strong>
+                    AB = |zB-zA|
+                </strong>
+            </p>
+
+            <p>
+                Cette relation est très utile pour démontrer
+                des égalités de longueurs.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXERCICE 1 -->
+
+    <section>
+
+        <h2>📝 Exercice 1 — Calcul algébrique</h2>
+
+        <div class="carte">
+
+            <p>
+                Soient :
+            </p>
+
+            <p>
+                z₁ = 3+2i
+            </p>
+
+            <p>
+                z₂ = 1-4i
+            </p>
+
+            <p>
+                Calculer :
+            </p>
+
+            <p>
+                1. z₁+z₂
+            </p>
+
+            <p>
+                2. z₁z₂
+            </p>
+
+            <p>
+                3. z̄₁
+            </p>
+
+            <p>
+                4. |z₁|
+            </p>
+
+            <button onclick="correctionComplexes1()">
+                Voir la correction
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXERCICE 2 -->
+
+    <section>
+
+        <h2>🔥 Exercice 2 — Niveau avancé</h2>
+
+        <div class="carte">
+
+            <p>
+                Résoudre dans ℂ :
+            </p>
+
+            <p>
+                <strong>
+                    z² - 6z + 13 = 0
+                </strong>
+            </p>
+
+            <button onclick="correctionComplexes2()">
+                Voir la correction
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXERCICE 3 -->
+
+    <section>
+
+        <h2>🚀 Exercice 3 — Niveau expert</h2>
+
+        <div class="carte">
+
+            <p>
+                Soit :
+            </p>
+
+            <p>
+                <strong>
+                    z = 1+i
+                </strong>
+            </p>
+
+            <p>
+                1. Déterminer |z|.
+            </p>
+
+            <p>
+                2. Déterminer un argument de z.
+            </p>
+
+            <p>
+                3. Donner sa forme trigonométrique.
+            </p>
+
+            <p>
+                4. Donner sa forme exponentielle.
+            </p>
+
+            <button onclick="correctionComplexes3()">
+                Voir la correction
+            </button>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Maths Terminale S</p>
+
+    <p>Apprendre les maths autrement 🚀</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+<div class="carte">
+
+    <h2>🧠 Teste tes connaissances</h2>
+
+    <p>
+        Tu as terminé le cours ?
+        Essaie maintenant le quiz.
+    </p>
+
+    <a href="quiz-complexes.html">
+        <button>🧠 Commencer le quiz</button>
+    </a>
+
+</div>            

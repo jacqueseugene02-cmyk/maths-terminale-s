@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fonction logarithme - Maths Terminale S</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>📊 Fonction logarithme népérien</h1>
+
+    <p>Mathématiques - Terminale S</p>
+
+    <nav>
+        <a href="index.html">🏠 Accueil</a>
+        <a href="cours.html">📚 Cours</a>
+        <a href="exercices.html">📝 Exercices</a>
+        <a href="quiz.html">🧠 Quiz</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="accueil">
+
+        <h2>1. Définition</h2>
+
+        <p>
+            La fonction logarithme népérien, notée <strong>ln</strong>,
+            est définie sur l'ensemble des réels strictement positifs.
+        </p>
+
+        <p>
+            Son domaine de définition est donc :
+        </p>
+
+        <p>
+            <strong>]0 ; +∞[</strong>
+        </p>
+
+        <p>
+            Le logarithme népérien est la fonction réciproque
+            de la fonction exponentielle.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>2. Propriétés fondamentales</h2>
+
+        <div class="carte">
+
+            <p>
+                Pour a > 0 et b > 0 :
+            </p>
+
+            <ul>
+
+                <li>
+                    <strong>ln(1) = 0</strong>
+                </li>
+
+                <li>
+                    <strong>ln(e) = 1</strong>
+                </li>
+
+                <li>
+                    <strong>ln(ab) = ln(a) + ln(b)</strong>
+                </li>
+
+                <li>
+                    <strong>ln(a/b) = ln(a) - ln(b)</strong>
+                </li>
+
+                <li>
+                    <strong>ln(aⁿ) = n ln(a)</strong>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>3. Lien entre ln et exp</h2>
+
+        <div class="carte">
+
+            <p>
+                Les fonctions logarithme et exponentielle sont
+                réciproques.
+            </p>
+
+            <p>
+                Ainsi :
+            </p>
+
+            <p>
+                <strong>ln(eˣ) = x</strong>
+            </p>
+
+            <p>
+                et :
+            </p>
+
+            <p>
+                <strong>eˡⁿˣ = x</strong>
+            </p>
+
+            <p>
+                pour tout x > 0.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>4. Dérivée du logarithme</h2>
+
+        <div class="carte">
+
+            <p>
+                Pour x > 0 :
+            </p>
+
+            <p>
+                <strong>
+                    (ln x)' = 1/x
+                </strong>
+            </p>
+
+            <h3>Cas général</h3>
+
+            <p>
+                Si u(x) > 0, alors :
+            </p>
+
+            <p>
+                <strong>
+                    (ln(u(x)))' = u'(x) / u(x)
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>5. Variations de ln(x)</h2>
+
+        <div class="carte">
+
+            <p>
+                Pour x > 0 :
+            </p>
+
+            <p>
+                <strong>
+                    (ln x)' = 1/x
+                </strong>
+            </p>
+
+            <p>
+                Or :
+            </p>
+
+            <p>
+                <strong>1/x > 0</strong>
+            </p>
+
+            <p>
+                Donc la fonction ln est strictement croissante
+                sur ]0 ; +∞[.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>6. Limites importantes</h2>
+
+        <div class="carte">
+
+            <p>
+                Lorsque x tend vers 0 par valeurs positives :
+            </p>
+
+            <p>
+                <strong>
+                    lim ln(x) = −∞
+                </strong>
+            </p>
+
+            <p>
+                Lorsque x tend vers +∞ :
+            </p>
+
+            <p>
+                <strong>
+                    lim ln(x) = +∞
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>💡 Exemple corrigé</h2>
+
+        <div class="carte">
+
+            <h3>Résoudre une équation</h3>
+
+            <p>
+                Résolvons :
+            </p>
+
+            <p>
+                <strong>
+                    ln(x) = 3
+                </strong>
+            </p>
+
+            <p>
+                On applique la fonction exponentielle aux deux membres :
+            </p>
+
+            <p>
+                <strong>
+                    eˡⁿˣ = e³
+                </strong>
+            </p>
+
+            <p>
+                Donc :
+            </p>
+
+            <p>
+                <strong>
+                    x = e³
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>🔥 Exemple avancé</h2>
+
+        <div class="carte">
+
+            <h3>Étude d'une fonction</h3>
+
+            <p>
+                Soit :
+            </p>
+
+            <p>
+                <strong>
+                    f(x) = x ln(x)
+                </strong>
+            </p>
+
+            <p>
+                Pour x > 0 :
+            </p>
+
+            <p>
+                <strong>
+                    f'(x) = ln(x) + 1
+                </strong>
+            </p>
+
+            <p>
+                Cherchons quand f'(x) = 0 :
+            </p>
+
+            <p>
+                ln(x) + 1 = 0
+            </p>
+
+            <p>
+                ln(x) = -1
+            </p>
+
+            <p>
+                <strong>
+                    x = e⁻¹ = 1/e
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>📝 Exercice</h2>
+
+        <div class="carte">
+
+            <h3>Exercice 1</h3>
+
+            <p>
+                Soit :
+            </p>
+
+            <p>
+                <strong>
+                    f(x) = x ln(x)
+                </strong>
+            </p>
+
+            <p>
+                1. Déterminer l'ensemble de définition de f.
+            </p>
+
+            <p>
+                2. Calculer f'(x).
+            </p>
+
+            <p>
+                3. Résoudre f'(x) = 0.
+            </p>
+
+            <p>
+                4. Étudier les variations de f.
+            </p>
+
+            <button onclick="correctionLogarithme()">
+                Voir la correction
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Maths Terminale S</p>
+
+    <p>Apprendre les maths autrement 🚀</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
