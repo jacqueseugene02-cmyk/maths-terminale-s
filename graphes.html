@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Théorie des graphes - Maths Terminale S</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="menu-container">
+
+        <button class="menu-bouton"
+                onclick="document.getElementById('menu').classList.toggle('menu-ouvert')">
+            ☰
+        </button>
+
+        <nav id="menu">
+
+            <a href="index.html">🏠 Accueil</a>
+
+            <a href="cours.html">📚 Cours</a>
+
+            <a href="exercices.html">📝 Exercices</a>
+
+            <a href="quiz.html">🧠 Quiz</a>
+
+            <a href="apropos.html">ℹ️ À propos</a>
+
+        </nav>
+
+    </div>
+
+    <h1>🔵 Théorie des graphes</h1>
+
+    <p>Maths Terminale S</p>
+
+</header>
+
+<main>
+
+<section>
+
+<h2>1. Introduction</h2>
+
+<p>
+La théorie des graphes est une branche des mathématiques qui permet
+d'étudier des relations entre différents objets.
+</p>
+
+<p>
+Un graphe peut être utilisé pour représenter un réseau routier,
+un réseau informatique, les liaisons entre des villes ou encore
+les relations entre plusieurs personnes.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>2. Vocabulaire</h2>
+
+<h3>🔹 Sommet</h3>
+
+<p>
+Un sommet représente un objet ou un élément du problème.
+On le représente généralement par un point.
+</p>
+
+<h3>🔹 Arête</h3>
+
+<p>
+Une arête représente une relation entre deux sommets.
+Elle est généralement représentée par un segment reliant deux sommets.
+</p>
+
+<p><strong>Exemple :</strong></p>
+
+<p>
+Si A et B sont deux sommets reliés, on peut écrire :
+<strong>A — B</strong>
+</p>
+
+</section>
+
+
+<section>
+
+<h2>3. Graphe non orienté</h2>
+
+<p>
+Dans un graphe non orienté, les arêtes n'ont pas de direction.
+</p>
+
+<p>
+Ainsi, si A est relié à B, alors B est également relié à A.
+</p>
+
+<p><strong>Exemple :</strong></p>
+
+<p>
+A — B — C
+</p>
+
+<p>
+Les sommets A, B et C sont reliés par des arêtes.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>4. Graphe orienté</h2>
+
+<p>
+Dans un graphe orienté, les relations possèdent une direction.
+Une flèche indique le sens de la relation.
+</p>
+
+<p><strong>Exemple :</strong></p>
+
+<p>
+A → B → C
+</p>
+
+<p>
+Ici, la relation va de A vers B puis de B vers C.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>5. Degré d'un sommet</h2>
+
+<p>
+Dans un graphe non orienté, le <strong>degré d'un sommet</strong>
+est le nombre d'arêtes qui arrivent à ce sommet.
+</p>
+
+<p><strong>Exemple :</strong></p>
+
+<p>
+Si le sommet A est relié à B, C et D, alors :
+</p>
+
+<p>
+<strong>deg(A) = 3</strong>
+</p>
+
+</section>
+
+
+<section>
+
+<h2>6. Chaîne</h2>
+
+<p>
+Une chaîne est une succession de sommets reliés par des arêtes.
+</p>
+
+<p><strong>Exemple :</strong></p>
+
+<p>
+A — B — C — D
+</p>
+
+<p>
+La succession A → B → C → D constitue une chaîne.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>7. Chemin</h2>
+
+<p>
+Dans un graphe orienté, un chemin respecte le sens des flèches.
+</p>
+
+<p><strong>Exemple :</strong></p>
+
+<p>
+A → B → C → D
+</p>
+
+<p>
+On peut aller de A vers D en suivant les flèches.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>8. Cycle</h2>
+
+<p>
+Un cycle est une chaîne qui revient à son sommet de départ.
+</p>
+
+<p><strong>Exemple :</strong></p>
+
+<p>
+A → B → C → A
+</p>
+
+<p>
+On part de A et on revient à A.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>9. Graphe connexe</h2>
+
+<p>
+Un graphe est connexe lorsque tous ses sommets peuvent être reliés
+entre eux par une chaîne.
+</p>
+
+<p>
+Autrement dit, il est possible de partir d'un sommet quelconque
+et d'atteindre les autres sommets.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>10. Matrice d'adjacence</h2>
+
+<p>
+La matrice d'adjacence permet de représenter un graphe sous forme
+de tableau.
+</p>
+
+<p>
+Pour un graphe comportant n sommets, on construit une matrice
+à n lignes et n colonnes.
+</p>
+
+<p>
+Dans un graphe non orienté simple :
+</p>
+
+<ul>
+    <li>on met 1 si deux sommets sont reliés ;</li>
+    <li>on met 0 s'ils ne sont pas reliés.</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>11. Exemple</h2>
+
+<p>
+Considérons les sommets A, B et C avec les arêtes :
+</p>
+
+<p>
+A — B et B — C
+</p>
+
+<p>
+La matrice d'adjacence est :
+</p>
+
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;A B C<br>
+A&nbsp;&nbsp;0 1 0<br>
+B&nbsp;&nbsp;1 0 1<br>
+C&nbsp;&nbsp;0 1 0
+</p>
+
+</section>
+
+
+<section>
+
+<h2>12. À retenir 📌</h2>
+
+<ul>
+    <li>Un graphe est constitué de sommets et d'arêtes.</li>
+    <li>Une arête relie deux sommets.</li>
+    <li>Un graphe peut être orienté ou non orienté.</li>
+    <li>Le degré d'un sommet correspond au nombre d'arêtes qui lui sont incidentes.</li>
+    <li>Une chaîne est une succession de sommets reliés.</li>
+    <li>Un cycle revient à son sommet de départ.</li>
+    <li>La matrice d'adjacence permet de représenter un graphe sous forme matricielle.</li>
+</ul>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>© 2026 Maths Terminale S</p>
+
+<p>Créé par <strong>Eugène Jacques</strong></p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
