@@ -523,3 +523,48 @@ footer p {
     border-radius: 0 0 10px 10px;
     overflow: hidden;
 }
+/* ===== PAGE D'ACCUEIL ===== */
+
+.accueil-header {
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+.accueil-header h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.accueil-header p {
+    font-size: 18px;
+}
+
+.auteur {
+    margin-top: 25px;
+}
+
+.accueil,
+.message-accueil {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.accueil h2,
+.message-accueil h2 {
+    margin-bottom: 15px;
+}
+
+.accueil p,
+.message-accueil p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 25px 10px;
+}
